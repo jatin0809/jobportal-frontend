@@ -11,9 +11,9 @@ export default function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="*" element={<NotFound/>} />
+        <Route path="/list/:id" element={<JobDetail/>} />
         <Route path="/list" element={<JobList/>} >
           <Route index element={<JobList/>} />
-          <Route path=":id" element={<JobDetail/>} />
         </Route>
       </Routes>
     </BrowserRouter>
